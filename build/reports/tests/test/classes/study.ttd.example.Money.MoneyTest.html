@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.348s</div>
+<div class="counter">0.290s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,43 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">reduceMoney()</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testArrayEquals()</td>
-<td class="success">0.008s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testCurrency()</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testEquality()</td>
-<td class="success">0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testIdentityRate()</td>
-<td class="success">0.005s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testPlusReturnSum()</td>
-<td class="success">0.004s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testReduceSum()</td>
-<td class="success">0.315s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testSimpleAddition()</td>
-<td class="success">0.007s</td>
+<td class="success">testMixedAddition()</td>
+<td class="success">0.290s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -122,21 +87,21 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>23:11:22.401 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-23:11:22.415 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-23:11:22.510 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [study.ttd.example.Money.MoneyTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-23:11:22.524 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [study.ttd.example.Money.MoneyTest], using SpringBootContextLoader
-23:11:22.531 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.ttd.example.Money.MoneyTest]: class path resource [study/ttd/example/Money/MoneyTest-context.xml] does not exist
-23:11:22.532 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.ttd.example.Money.MoneyTest]: class path resource [study/ttd/example/Money/MoneyTestContext.groovy] does not exist
-23:11:22.532 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [study.ttd.example.Money.MoneyTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-23:11:22.533 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [study.ttd.example.Money.MoneyTest]: MoneyTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-23:11:22.595 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [study.ttd.example.Money.MoneyTest]
-23:11:22.675 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ojs/Desktop/git/Study/ttd-book/build/classes/java/main/study/ttd/example/ExampleApplication.class]
-23:11:22.678 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration study.ttd.example.ExampleApplication for test class study.ttd.example.Money.MoneyTest
-23:11:22.784 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [study.ttd.example.Money.MoneyTest]: using defaults.
-23:11:22.785 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-23:11:22.799 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3dddbe65, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49a64d82, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@344561e0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@66d23e4a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@36ac8a63, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d9d1b69, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52c8295b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@251f7d26, org.springframework.test.context.event.EventPublishingTestExecutionListener@77b21474, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52d10fb8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@41c07648, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1fe8d51b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@781e7326, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@22680f52, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@60d84f61]
-23:11:22.803 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1804f60d testClass = MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3a80515c testClass = MoneyTest, locations = '{}', classes = '{class study.ttd.example.ExampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3fa2213, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@29df4d43, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@75f65e45, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@75390459, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2262b621, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@38af9828], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+<pre>23:25:40.733 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:25:40.751 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:25:40.794 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [study.ttd.example.Money.MoneyTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:25:40.819 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [study.ttd.example.Money.MoneyTest], using SpringBootContextLoader
+23:25:40.824 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.ttd.example.Money.MoneyTest]: class path resource [study/ttd/example/Money/MoneyTest-context.xml] does not exist
+23:25:40.826 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [study.ttd.example.Money.MoneyTest]: class path resource [study/ttd/example/Money/MoneyTestContext.groovy] does not exist
+23:25:40.826 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [study.ttd.example.Money.MoneyTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:25:40.827 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [study.ttd.example.Money.MoneyTest]: MoneyTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:25:40.893 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [study.ttd.example.Money.MoneyTest]
+23:25:40.997 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ojs/Desktop/git/Study/ttd-book/build/classes/java/main/study/ttd/example/ExampleApplication.class]
+23:25:41.001 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration study.ttd.example.ExampleApplication for test class study.ttd.example.Money.MoneyTest
+23:25:41.108 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [study.ttd.example.Money.MoneyTest]: using defaults.
+23:25:41.109 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+23:25:41.127 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41c07648, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1fe8d51b, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@781e7326, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22680f52, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@60d84f61, org.springframework.test.context.support.DirtiesContextTestExecutionListener@39c11e6c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@324dcd31, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@503d56b5, org.springframework.test.context.event.EventPublishingTestExecutionListener@72bca894, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@433ffad1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1fc793c2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2575f671, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@329a1243, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@ecf9fb3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2d35442b]
+23:25:41.130 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4cc61eb1 testClass = MoneyTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2d8f2f3a testClass = MoneyTest, locations = '{}', classes = '{class study.ttd.example.ExampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@58fe0499, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@75390459, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@57fd91c9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@565b064f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@63b1d4fa, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@376a0d86], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -146,20 +111,20 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.7)
 
-2023-01-08 23:11:23.496  INFO 98030 --- [    Test worker] study.ttd.example.Money.MoneyTest        : Starting MoneyTest using Java 11.0.15 on ojaeseog-ui-MacBookPro.local with PID 98030 (started by ojs in /Users/ojs/Desktop/git/Study/ttd-book)
-2023-01-08 23:11:23.498  INFO 98030 --- [    Test worker] study.ttd.example.Money.MoneyTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-01-08 23:11:24.957  INFO 98030 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-08 23:11:24.985  INFO 98030 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
-2023-01-08 23:11:25.931  INFO 98030 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-01-08 23:11:25.984  INFO 98030 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
-2023-01-08 23:11:26.182  INFO 98030 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-01-08 23:11:26.294  INFO 98030 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-01-08 23:11:26.815  INFO 98030 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-01-08 23:11:26.840  INFO 98030 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2023-01-08 23:11:27.103  INFO 98030 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-08 23:11:27.112  INFO 98030 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-08 23:11:27.680  WARN 98030 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-08 23:11:28.905  INFO 98030 --- [    Test worker] study.ttd.example.Money.MoneyTest        : Started MoneyTest in 5.997 seconds (JVM running for 7.845)
+2023-01-08 23:25:42.083  INFO 99533 --- [    Test worker] study.ttd.example.Money.MoneyTest        : Starting MoneyTest using Java 11.0.15 on ojaeseog-ui-MacBookPro.local with PID 99533 (started by ojs in /Users/ojs/Desktop/git/Study/ttd-book)
+2023-01-08 23:25:42.088  INFO 99533 --- [    Test worker] study.ttd.example.Money.MoneyTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-01-08 23:25:43.543  INFO 99533 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-08 23:25:43.571  INFO 99533 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2023-01-08 23:25:44.611  INFO 99533 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-08 23:25:44.667  INFO 99533 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-08 23:25:44.858  INFO 99533 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-08 23:25:44.968  INFO 99533 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-08 23:25:45.526  INFO 99533 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-08 23:25:45.550  INFO 99533 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-01-08 23:25:45.848  INFO 99533 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-08 23:25:45.859  INFO 99533 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-08 23:25:46.432  WARN 99533 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-08 23:25:47.714  INFO 99533 --- [    Test worker] study.ttd.example.Money.MoneyTest        : Started MoneyTest in 6.418 seconds (JVM running for 8.342)
 </pre>
 </span>
 </div>
@@ -171,7 +136,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Jan 8, 2023, 11:11:29 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Jan 8, 2023, 11:25:48 PM</p>
 </div>
 </div>
 </body>
