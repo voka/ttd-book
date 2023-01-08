@@ -2,6 +2,7 @@ package study.ttd.example.Money;
 
 import lombok.Getter;
 import lombok.ToString;
+import study.ttd.example.Bank;
 import study.ttd.example.Expression;
 import study.ttd.example.Sum;
 
@@ -43,7 +44,8 @@ public class Money implements Expression{
   }
 
   @Override
-  public Money reduce(String to) {
+  public Money reduce(Bank bank, String to) {
+    int rate = bank.rate(currency,to);
     return this;
   }
 }
