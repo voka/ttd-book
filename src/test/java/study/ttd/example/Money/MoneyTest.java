@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import study.ttd.example.Bank;
 import study.ttd.example.Expression;
+import study.ttd.example.Sum;
 
 @SpringBootTest
 public class MoneyTest {
@@ -33,6 +34,31 @@ public class MoneyTest {
     Money reduced = bank.reduce(sum,"USD");
     assertEquals(Money.dollar(10),reduced);
   }
+
+  @Test
+  public void testPlusReturnSum(){
+    Money five = Money.dollar(5);
+    Expression result = five.plus(five);
+    Sum sum = (Sum) result;
+    assertEquals(five,sum.getAugend());
+    assertEquals(five,sum.getAugend());
+  }
+
+  @Test
+  public void testReduceSum(){
+    Expression sum = new Sum(Money.dollar(3), Money.dollar(4));
+    Bank bank = new Bank();
+    Money result = bank.reduce(sum,"USD");
+    assertEquals(Money.dollar(7),result);
+  }
+
+  @Test
+  public void reduceMoney(){
+    Bank bank = new Bank();
+    Money result = bank.reduce(Money.dollar(1),"USD");
+    assertEquals(Money.dollar(1),result);
+  }
+
 
 
 

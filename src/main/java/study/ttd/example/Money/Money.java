@@ -1,9 +1,12 @@
 package study.ttd.example.Money;
 
+import lombok.Getter;
 import lombok.ToString;
 import study.ttd.example.Expression;
+import study.ttd.example.Sum;
 
 @ToString
+@Getter
 public class Money implements Expression{
   // 요놈을 protected 로 정의해야 이 추상 클래스를 사용하는 객체들에서 멤버 변수에 접근 할 수 있다.
   protected int amount;
@@ -36,6 +39,11 @@ public class Money implements Expression{
   }
 
   public Expression plus(Money addend) {
-    return new Money(amount + addend.amount, currency);
+    return new Sum(this,addend);
+  }
+
+  @Override
+  public Money reduce(String to) {
+    return this;
   }
 }
